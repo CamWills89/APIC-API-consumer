@@ -5,13 +5,13 @@ function App() {
   const [data, setData] = useState(null);
 
   // Change baseURL to your APIC api endpoint
-  const baseURL = "https://lfg-gw-gateway-ibm-common-services.apps.66ff8e739c3956c46a304ad9.ocp.techzone.ibm.com/lfg-life-insurance/prod/zen";
+  const baseURL = "<api-endpoint>";
 
   function handleGetData() {
     axios.get(baseURL, {
       headers: {
         // replace your api key here
-        'X-IBM-Client-ID': '433614e22d65b3cbb45185e58045036d'
+        'X-IBM-Client-ID': '<api-key>'
       }
     })
     .then((response) => {
